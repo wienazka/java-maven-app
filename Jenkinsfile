@@ -27,7 +27,7 @@ pipeline {
                         sh "echo \$PASS | docker login -u \$USER --password-stdin"
                         
                         echo 'Pushing image to Docker Hub...'
-                        sh 'docker push azeshion21/demo-app:jma-2.0'
+                        sh 'docker push wienazka/demo-app:jma-2.0'
                     }
                 }
             }
